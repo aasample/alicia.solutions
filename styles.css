@@ -180,6 +180,9 @@ body {
     height: 300px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-image.retro {
@@ -188,10 +191,54 @@ body {
     animation: gradientShift 15s ease infinite;
 }
 
+.hero-image.retro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px),
+        repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+    opacity: 0.5;
+}
+
+.hero-image.retro::after {
+    content: '1984';
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: -0.05em;
+}
+
 .hero-image.modern {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     background-size: 400% 400%;
     animation: gradientShift 20s ease infinite;
+}
+
+.hero-image.modern::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255,255,255,0.06) 0%, transparent 50%);
+}
+
+.hero-image.modern::after {
+    content: '2025';
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: -0.05em;
 }
 
 @keyframes gradientShift {
