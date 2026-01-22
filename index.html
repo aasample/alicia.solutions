@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alicia Baker-Sample - Systems thinking meets AI-native building. 20+ years enterprise telecom architect now building AI-powered applications.">
-    <title>Alicia Baker-Sample | alicia.solutions</title>
+    <meta name="description" content="Alicia Baker-Sample - Systems thinking meets AI-native building. Enterprise architect turned AI builder.">
+    <title>Alicia Baker-Sample | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
             <div class="nav-content">
-                <a href="/" class="logo">Alicia Baker-Sample</a>
-                <div class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                <a href="/" class="logo">Portfolio</a>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-cta">Let's Talk</a>
                 </div>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <button class="mobile-toggle" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -33,122 +34,173 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
     </div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content fade-in">
-                <h1 class="hero-title">
-                    <span class="year">1984:</span> A kid with an Apple IIe, VisiCalc, and Frogger.<br>
-                    <span class="subtitle">Learning to think in systems before knowing what systems were.</span>
-                </h1>
-                <h2 class="hero-title-2">
-                    <span class="year">2025:</span> That same problem-solver builds AI-powered applications<br>
-                    <span class="subtitle">and architects solutions for the agentic future.</span>
-                </h2>
-                <p class="tagline">Systems thinking meets AI-native building.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">See What I've Built</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+            <div class="hero-grid">
+                <!-- 1984 Card -->
+                <div class="hero-card animate-in">
+                    <div class="hero-image retro">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="hero-text">
+                        <h2 class="hero-year">1984:</h2>
+                        <p class="hero-caption">A kid with an Apple IIe, VisiCalc, and Frogger.</p>
+                        <p class="hero-subcaption">Learning to think in systems before knowing what systems were.</p>
+                    </div>
                 </div>
+
+                <!-- 2025 Card -->
+                <div class="hero-card animate-in" style="animation-delay: 0.2s;">
+                    <div class="hero-image modern">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="hero-text">
+                        <h2 class="hero-year">2025:</h2>
+                        <p class="hero-caption">That same problem-solver builds AI-powered applications</p>
+                        <p class="hero-subcaption">and architects solutions for the agentic future.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tagline -->
+            <h1 class="tagline animate-in" style="animation-delay: 0.4s;">
+                Systems thinking meets AI-native building.
+            </h1>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta animate-in" style="animation-delay: 0.6s;">
+                <a href="#projects" class="btn btn-primary">
+                    See What I've Built
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 3.33334L8.75 12.0833L4.16667 7.50001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Let's Talk
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Value Cards -->
-    <section class="value-cards">
+    <!-- What I Bring Section -->
+    <section class="value-section" id="about">
         <div class="container">
-            <div class="cards-grid">
-                <div class="card fade-in">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v6m0 6v6m-6-6h6m6 0h6"></path>
-                            <circle cx="12" cy="12" r="10"></circle>
+            <h2 class="section-title animate-on-scroll">What I Bring</h2>
+            <p class="section-subtitle animate-on-scroll">A unique blend of enterprise experience and cutting-edge AI skills</p>
+
+            <div class="value-grid">
+                <!-- Systems Thinker -->
+                <div class="value-card animate-on-scroll">
+                    <div class="value-icon brain">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor"/>
+                            <circle cx="12" cy="12" r="3" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>Systems Thinker</h3>
-                    <p>20+ years architecting enterprise telecom systems for Fortune 100 companies. I understand routing, decision trees, event-driven architecture - the same foundations that power AI agents.</p>
+                    <h3 class="value-title">Systems Thinker</h3>
+                    <p class="value-description">20+ years architecting enterprise telecom systems for Fortune 100 companies. I understand routing, decision trees, event-driven architecture - the same foundations that power AI agents.</p>
                 </div>
 
-                <div class="card fade-in" style="animation-delay: 0.1s;">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                <!-- AI-Native Builder -->
+                <div class="value-card animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="value-icon rocket">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L4 14h8v8l8-12h-8V2z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>AI-Native Builder</h3>
-                    <p>Built and deployed MyEstateAlly - a production AI application using GPT-4 Vision, Google Cloud, and modern web standards. Vibe coded with Claude, Cursor, and practical problem-solving.</p>
+                    <h3 class="value-title">AI-Native Builder</h3>
+                    <p class="value-description">Built and deployed MyEstateAlly - a production AI application using GPT-4 Vision, Google Cloud, and modern web standards. Vibe coded with Claude, Cursor, and practical problem-solving.</p>
                 </div>
 
-                <div class="card fade-in" style="animation-delay: 0.2s;">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
+                <!-- Fast Learner -->
+                <div class="value-card animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="value-icon lightning">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <h3>Fast Learner</h3>
-                    <p>From zero Python to production app in weeks. Currently learning MCP and agentic frameworks. I don't just read about technology - I build with it.</p>
+                    <h3 class="value-title">Fast Learner</h3>
+                    <p class="value-description">From zero Python to production app in weeks. Currently learning MCP and agentic frameworks. I don't just read about technology - I build with it.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="stats">
+    <section class="stats-section" id="projects">
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-box fade-in">
+                <div class="stat-box animate-on-scroll">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M3 9h18M9 3v18" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">20+</div>
-                    <div class="stat-label">Years<br>Enterprise Systems</div>
+                    <div class="stat-label">Years</div>
+                    <div class="stat-sublabel">Enterprise Systems</div>
                 </div>
-                <div class="stat-box fade-in" style="animation-delay: 0.1s;">
+
+                <div class="stat-box animate-on-scroll" style="animation-delay: 0.1s;">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 8h10M7 12h10M7 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">1</div>
-                    <div class="stat-label">Shipped<br>Production AI App</div>
+                    <div class="stat-label">Shipped</div>
+                    <div class="stat-sublabel">Production AI App</div>
                 </div>
-                <div class="stat-box fade-in" style="animation-delay: 0.2s;">
+
+                <div class="stat-box animate-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 1v6m0 6v6m-6-6h6m6 0h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">6</div>
-                    <div class="stat-label">Tools<br>Claude, Cursor, Copilot, Manus, ChatGPT, Lovable</div>
+                    <div class="stat-label">Tools</div>
+                    <div class="stat-sublabel">Claude, Cursor, Copilot, Manus, ChatGPT, Lovable</div>
                 </div>
-                <div class="stat-box fade-in" style="animation-delay: 0.3s;">
+
+                <div class="stat-box animate-on-scroll" style="animation-delay: 0.3s;">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <div class="stat-number">∞</div>
-                    <div class="stat-label">Curiosity<br>Learning Since 1984</div>
+                    <div class="stat-label">Curiosity</div>
+                    <div class="stat-sublabel">Learning Since 1984</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="final-cta" id="contact">
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
         <div class="container">
-            <div class="cta-content fade-in">
-                <h2>Ready to build the future of AI agents</h2>
-                <a href="mailto:aasample@gmail.com" class="btn btn-primary btn-large">Let's Connect</a>
-                <div class="contact-links">
-                    <a href="https://www.linkedin.com/in/alicia-baker-sample/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/aasample" target="_blank" rel="noopener" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:aasample@gmail.com" aria-label="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </a>
-                </div>
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title">Ready to build the future of <span class="gradient-text">AI agents</span></h2>
+                <p class="cta-subtitle">Let's discuss how my experience in enterprise systems and passion for AI can help bring your vision to life.</p>
+                <a href="mailto:aasample@gmail.com" class="btn btn-large">
+                    Let's Connect
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
@@ -156,7 +208,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Alicia Baker-Sample | alicia.solutions</p>
+            <div class="footer-content">
+                <p class="footer-text">© 2026 All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/alicia-baker-sample/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+                    <a href="https://github.com/aasample" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+                    <a href="mailto:aasample@gmail.com" class="footer-link">Email</a>
+                </div>
+            </div>
         </div>
     </footer>
 
