@@ -204,13 +204,13 @@ body {
 .hero-image.retro {
     background-image: linear-gradient(rgba(255, 107, 53, 0.3), rgba(247, 147, 30, 0.3)), 
                       url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80');
-    /* Vintage computer/tech aesthetic - warm tones */
+    /* 1984: Vintage computer with warm orange overlay */
 }
 
 .hero-image.modern {
     background-image: linear-gradient(rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3)), 
                       url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80');
-    /* Modern tech workspace - cool blue/purple tones */
+    /* 2025: Modern workspace with cool blue/purple overlay */
 }
 
 @keyframes gradientShift {
