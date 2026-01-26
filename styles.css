@@ -203,14 +203,14 @@ body {
 
 .hero-image.retro {
     background-image: linear-gradient(rgba(255, 107, 53, 0.3), rgba(247, 147, 30, 0.3)), 
-                      url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80');
-    /* 1984: Vintage computer with warm orange overlay */
+                      url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80');
+    /* 1984: Retro computer/keyboard with warm vintage aesthetic */
 }
 
 .hero-image.modern {
     background-image: linear-gradient(rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3)), 
-                      url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&q=80');
-    /* 2025: Modern workspace with cool blue/purple overlay */
+                      url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80');
+    /* 2025: Modern coding workspace with multiple monitors */
 }
 
 @keyframes gradientShift {
