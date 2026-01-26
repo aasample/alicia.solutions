@@ -203,14 +203,14 @@ body {
 
 .hero-image.retro {
     background-image: linear-gradient(rgba(255, 107, 53, 0.3), rgba(247, 147, 30, 0.3)), 
-                      url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80');
-    /* 1984: Retro computer/keyboard with warm vintage aesthetic */
+                      url('https://images.unsplash.com/photo-1603575448878-868a20723f5d?w=800&q=80');
+    /* 1984: Warm, cozy vintage computer desk setup */
 }
 
 .hero-image.modern {
     background-image: linear-gradient(rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3)), 
-                      url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80');
-    /* 2025: Modern coding workspace with multiple monitors */
+                      url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80');
+    /* 2025: Sleek modern desk with monitors showing code */
 }
 
 @keyframes gradientShift {
